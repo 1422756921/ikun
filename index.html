@@ -59,6 +59,8 @@
                     <button type="button" class="btn btn-secondary btn-lg"
                         onclick="foreach()">若出现了bug点击此按钮后刷新界面</button>
                     <br /><br />
+                    <button id="mButton" class="btn btn-primary btn-lg mb-3">开启BGM</button>
+                    <br>
                 </div>
 
                 <div id="btn_group2" style="display: block;">
@@ -136,6 +138,19 @@
             </div>
         </div>
     </div>
+    <script>
+  const mBody = document.getElementById('body')
+  const mAudio = document.getElementById('audio')
+  // 创建一个按钮
+
+ 
+  mButton.onclick = () => {
+    mAudio.src = 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-10b3891b-be67-4103-a60f-9da1d057470c/a74186b9-3427-4230-ab3a-44fc4161a5c1.mp3'
+    mAudio.play()
+  }
+  mBody.append(mButton)
+ 
+</script>
 </body>
 
 </html>
